@@ -1,0 +1,14 @@
+name: same-test
+on: [push]
+
+jobs:
+  same_check:
+    name: Use Linux Commands
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        users: actions/checkout@v4
+      - name: Permission Setting
+        run: chmod +x same.sh test_same.sh
+      - name: Test Start!
+        run: ./test_same.sh

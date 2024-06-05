@@ -1,8 +1,0 @@
-name: actions-trial
-on: [push]
-
-jobs:
-  check-bats-varsion:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "これはactionsのテストです"
